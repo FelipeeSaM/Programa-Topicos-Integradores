@@ -10,8 +10,8 @@ namespace Trabalho_topicos
             int maxPedidos = 0;
             string[] arrayPedidos = new string[10];
 
-			Console.WriteLine("Campanha dark o rei das trevas:" +
-            "Eu só faço os furo, quem mata é deus.\n");
+			Console.WriteLine("Steam dark o rei das trevas:" +
+            " Eu só faço os furo, quem mata é deus.\n");
 
             string opcaoUsuario = obterOpcaoUsuario();
             while (opcaoUsuario != "6") {
