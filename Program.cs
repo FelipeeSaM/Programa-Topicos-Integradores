@@ -100,7 +100,7 @@ namespace Trabalho_topicos
 			   Console.WriteLine($"Impossível realizar operação. Ainda existem {atualPedidos} a serem retirados.");
 		   } else {
 			        Console.WriteLine($"O número total de pedidos atendidos pela casa foi de {maxPedidos}\n" +
-                    $"Obrigado por utilizar os nossos serviços. Dark o rei das trevas SA. \n");
+                    $"Obrigado por utilizar os nossos serviços. Dark o rei das trevas SA.\n");
                     Console.Clear();
 		          }
 		   }
