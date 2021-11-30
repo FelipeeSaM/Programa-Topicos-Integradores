@@ -10,9 +10,6 @@ namespace Trabalho_topicos
             int maxPedidos = 0;
             string[] arrayPedidos = new string[10];
 
-			Console.WriteLine("Steam dark o rei das trevas:" +
-            " Eu só faço os furo, quem mata é deus.\n");
-
             string opcaoUsuario = obterOpcaoUsuario();
             while (opcaoUsuario != "6") {
                 switch (opcaoUsuario) {
@@ -47,7 +44,7 @@ namespace Trabalho_topicos
                 maxPedidos++;
                 Console.WriteLine(" ");
                 } else {
-                    Console.WriteLine("Há pedidos demais, favor aguardar liberação.");
+                    Console.WriteLine("Há pedidos demais, favor aguardar liberação.\n");
                 }
            }
 
@@ -58,7 +55,7 @@ namespace Trabalho_topicos
                 } else {
                     Console.WriteLine("Qual o número do pedido a ser retirado?");
                     int pedidoRetirado = int.Parse(Console.ReadLine());
-                    Console.WriteLine($"O pedido {arrayPedidos[pedidoRetirado]} foi retirado com sucesso!");
+                    Console.WriteLine($"O pedido {arrayPedidos[pedidoRetirado]} foi retirado com sucesso!\n");
                     for(int i = 1; i <= 10; i++) {
                         if (pedidoRetirado < 10) {
                             arrayPedidos[pedidoRetirado-1] = arrayPedidos[pedidoRetirado];
@@ -105,6 +102,7 @@ namespace Trabalho_topicos
 			        Console.WriteLine($"O número total de pedidos atendidos pela casa foi de {maxPedidos}\n" +
                     $"Obrigado por utilizar os nossos serviços. Dark o rei das trevas SA.\n");
                     Console.Clear();
+                    Environment.Exit(0);
 		          }
 		   }
         }
