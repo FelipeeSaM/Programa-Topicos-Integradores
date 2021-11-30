@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Timers;
+using System.Threading;
 
 namespace Trabalho_topicos {
 	class Program {
@@ -88,8 +88,8 @@ namespace Trabalho_topicos {
 						num++;
 					}
 				}
-				Console.ReadKey();
-				Console.WriteLine(" \n");
+				Thread.Sleep(2000);
+				Console.WriteLine("\n");
 			}
 
 
